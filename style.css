@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 12%;
+    padding-right: 12%;
+    background-color: #1F2937;
+}
+
+header h3 {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+nav {
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly;
+    color: #E5E7EB;
+}
+
+.hero {
+    display: flex;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    background-color: #1F2937;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #F9FAF8;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.hero-txt {
+    flex: 1;
+}
+
+.hero img {
+    flex: 1;
+    background-color: gray;
+    height: 200px;
+}
+
+.hero button {
+    border: 0;
+    height: 20px;
+}
+
+.examples {
+    display: flex;
+    flex-direction: column;
+}
+
+.examples h2 {
+    text-align: center;
+    font-size: 36px;
+    columns: #1F2937;
+}
+
+.articles {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 250px;
+    margin-right: 250px;
+    padding-bottom: 20px;
+}
+
+.articles img {
+    border: 2px solid #3882F6;
+    border-radius: 5px;
+}
+
+.quotes {
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    background-color: #E5E7EB;
+    font-size: 36px;
+    color: #1F2937;
+    font-style: italic;
+}
+
+.quotes p.author {
+    text-align: right;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: normal;
+}
+
+.action {
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    margin-bottom: 100px;
+    background-color: #3882F6;
+    border-radius: 5px;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.action-txt p {
+    background-color: #3882F6;
+    color:  #E5E7EB;
+}
+
+.action-bt {
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.action button {
+    border: 2px solid #E5E7EB;
+    height: 25px;
+}
+
+button {
+    background-color: #3882F6;
+    border-radius: 5px;
+    color: #E5E7EB;
+    width: 100px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: #1F2937;
+    color:  #E5E7EB;
+}
