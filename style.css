@@ -1,6 +1,27 @@
+@font-face {
+    font-family: 'Regular';
+    src: url(fonts/Roboto-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Bold';
+    src: url(fonts/Roboto-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'lItalic';
+    src: url(fonts/Roboto-LightItalic.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Black';
+    src: url(fonts/Roboto-Black.ttf) format('truetype');
+}
+
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Regular';
 }
 
 header {
@@ -14,6 +35,26 @@ header {
 header h3 {
     font-size: 24px;
     color: #F9FAF8;
+}
+
+header a:link {
+    color: #F9FAF8;
+    text-decoration: none;
+}
+
+header a:visited {
+    color: #F9FAF8;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #E5E7EB;
+    text-decoration: none;
+}
+
+header a:active {
+    color: #F9FAF8;
+    text-decoration: none;
 }
 
 nav {
@@ -34,12 +75,14 @@ nav {
 
 .hero h1 {
     font-size: 48px;
+    font-family: 'Black', sans-serif;
     color: #F9FAF8;
 }
 
 .hero p {
     font-size: 18px;
     color: #E5E7EB;
+    width: 450px;
 }
 
 .hero-txt {
@@ -49,12 +92,34 @@ nav {
 .hero img {
     flex: 1;
     background-color: gray;
-    height: 200px;
+    height: 300px;
 }
 
 .hero button {
     border: 0;
     height: 20px;
+}
+
+.hero button:hover {
+    color: #3882F6;
+    background-color: #E5E7EB;
+    transition-duration: 0.2s;
+}
+
+.hero a:link {
+    text-decoration: none;
+}
+
+.hero a:visited {
+    text-decoration: none;
+}
+
+.hero a:hover {
+    text-decoration: none;
+}
+
+.hero a:active {
+    text-decoration: none;
 }
 
 .examples {
@@ -65,6 +130,7 @@ nav {
 .examples h2 {
     text-align: center;
     font-size: 36px;
+    font-family: 'Black', sans-serif;
     columns: #1F2937;
 }
 
@@ -77,8 +143,10 @@ nav {
 }
 
 .articles img {
-    border: 2px solid #3882F6;
-    border-radius: 5px;
+    border: 4px solid #3882F6;
+    border-radius: 8px;
+    width: 150px;
+    height: 150px;
 }
 
 .quotes {
@@ -90,14 +158,16 @@ nav {
     background-color: #E5E7EB;
     font-size: 36px;
     color: #1F2937;
-    font-style: italic;
+}
+
+.quotes .quote {
+    font-family: 'lItalic', sans-serif;
 }
 
 .quotes p.author {
     text-align: right;
-    font-weight: bold;
     font-size: 20px;
-    font-style: normal;
+    font-family: 'Bold', sans-serif;
 }
 
 .action {
@@ -127,6 +197,28 @@ nav {
     height: 25px;
 }
 
+.action a:link {
+    text-decoration: none;
+}
+
+.action a:visited {
+    text-decoration: none;
+}
+
+.action a:hover {
+    text-decoration: none;
+}
+
+.action a:active {
+    text-decoration: none;
+}
+
+.action button:hover {
+    color: #3882F6;
+    background-color: #E5E7EB;
+    transition-duration: 0.2s;
+}
+
 button {
     background-color: #3882F6;
     border-radius: 5px;
@@ -142,4 +234,22 @@ footer {
     text-align: center;
     background-color: #1F2937;
     color:  #E5E7EB;
+}
+
+/*News Page content*/
+
+.news-articles {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+}
+
+.news-articles p {
+    width: 180px;
+    text-align: center;
+}
+
+.news-articles img{
+    width: 150px;
+    height: 150px;
 }
