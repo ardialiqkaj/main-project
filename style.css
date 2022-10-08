@@ -93,6 +93,8 @@ nav {
     flex: 1;
     background-color: gray;
     height: 300px;
+    max-width: 550px;
+    margin-left: 20px;
 }
 
 .hero button {
@@ -111,10 +113,12 @@ nav {
 }
 
 .hero a:visited {
+    color: #E5E7EB;
     text-decoration: none;
 }
 
 .hero a:hover {
+    color: #3882F6;
     text-decoration: none;
 }
 
@@ -185,11 +189,13 @@ nav {
 .action-txt p {
     background-color: #3882F6;
     color:  #E5E7EB;
+    padding-left: 10px;
 }
 
 .action-bt {
     margin-top: 30px;
-    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .action button {
@@ -202,10 +208,12 @@ nav {
 }
 
 .action a:visited {
+    color:  #E5E7EB;
     text-decoration: none;
 }
 
 .action a:hover {
+    color: #3882F6;
     text-decoration: none;
 }
 
@@ -252,4 +260,35 @@ footer {
 .news-articles img{
     width: 150px;
     height: 150px;
+}
+
+/*About page content*/
+
+#group img{
+    width: 500px;
+    height: auto;
+}
+
+#group p{
+    width: 500px;
+}
+
+/*Register page content*/
+
+.register-form input {
+    margin-bottom: 20px;
+}
+
+#register {
+    background-color: #E5E7EB;
+    color: #3882F6;
+    width: 100px;
+    border-radius: 5px;
+    border: 2px solid #3882F6;
+}
+
+#register:hover {
+    background-color: #3882F6;
+    color: #E5E7EB;
+    transition-duration: 0.2s;
 }
