@@ -5,65 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Frontend Newsletter</title>
 </head>
 <body>
     <header>
         <h3><a href="./index.html">Frontend Newsletter</a></h3>
         <nav>
-            <p><a href="./pages/news.html">News</a></p>
-            <p><a href="./pages/about.html">About</a></p>
-            <p><a href="./pages/register.html">Register</a></p>
+            <ul>
+                <li><a href="./pages/news.html">News</a></li>
+                <li><a href="./pages/about.html">About</a></li>
+                <li><a href="./pages/register.html">Register</a></li>
+            </ul>
         </nav>
     </header>
-    <div class="hero">
-        <div class="hero-txt">
-            <h1>This is the weekly newsletter</h1>
-            <p>This website contains a weekly and monthly newsletter regarding the 
-                Frontend Development sector.
+    <main>
+        <section class="hero">
+            <aside class="hero-txt">
+                <h1>This is the weekly newsletter</h1>
+                <p>This website contains a weekly and monthly newsletter regarding the 
+                    Frontend Development sector.
+                </p>
+                <button class="hero-bt"><a href="./pages/register.html">Sign up</a></button>
+            </aside>
+            <img src="./images/header.jpeg" alt="first image">
+        </section>
+        <section class="examples">
+            <h2>Some frontend language examples</h2>
+            <aside class="articles">
+                <figure>
+                    <img src="./images/JavaScript.png" alt="JavaScript image">
+                    <figcaption>JavaScript</figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/HTML.png" alt="HTML image">
+                    <figcaption>HTML</figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/CSS.png" alt="CSS image">
+                    <figcaption>CSS</figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/ReactJS.png" alt="ReactJS image">
+                    <figcaption>ReactJS</figcaption>
+                </figure>
+            </aside>
+        </section>
+        <section class="quotes">
+            <blockquote>
+                “Your website is the center of your digital eco-system, like a brick and mortar location, the experience matters once a customer enters, just as much as the perception they have of you before they walk through the door.”
+            </blockquote>
+            <p class="author">
+                ― Leland Dieno
             </p>
-        <button><a href="./pages/register.html">Sign up</a></button>
-        </div>
-        <img src="./images/header.jpeg" alt="first image">
-    </div>
-    <div class="examples">
-        <h2>Some frontend language examples</h2>
-        <div class="articles">
-            <article>
-                <img src="./images/JavaScript.png" alt="JavaScript image">
-                <p>JavaScript</p>
-            </article>
-            <article>
-                <img src="./images/HTML.png" alt="HTML image">
-                <p>HTML</p>
-            </article>
-            <article>
-                <img src="./images/CSS.png" alt="CSS image">
-                <p>CSS</p>
-            </article>
-            <article>
-                <img src="./images/ReactJS.png" alt="ReactJS image">
-                <p>ReactJS</p>
-            </article>
-        </div>
-    </div>
-    <section class="quotes">
-        <p class="quote">
-            “Your website is the center of your digital eco-system, like a brick and mortar location, the experience matters once a customer enters, just as much as the perception they have of you before they walk through the door.”
-        </p>
-        <p class="author">
-            ― Leland Dieno
-        </p>
-    </section>
-    <div class="action">
-        <div class="action-txt">
-            <p>Sign up now!</p>
-            <p>New users will receive 3 months of free newsletters.</p>
-        </div>
-        <div class="action-bt">
-            <button><a href="./pages/register.html">Sign up</a></button>
-        </div>
-    </div>
+        </section>
+        <section class="action">
+            <aside class="action-txt">
+                <p>Sign up now!</p>
+                <p>New users will receive 3 months of free newsletters.</p>
+            </aside>
+            <button class="action-bt"><a href="./pages/register.html">Sign up</a></button>
+        </section>
+    </main>
     <footer>
         <p>Copyright &copy;</p>
     </footer>

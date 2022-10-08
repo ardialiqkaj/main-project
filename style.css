@@ -57,9 +57,17 @@ header a:active {
     text-decoration: none;
 }
 
-nav {
+header ul {
     display: flex;
-    width: 30%;
+    list-style-type: none;
+}
+
+header li {
+    padding-left: 25px;
+}
+
+nav {
+    padding-top: 5px;
     justify-content: space-evenly;
     color: #E5E7EB;
 }
@@ -140,13 +148,24 @@ nav {
 
 .articles {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     margin-left: 250px;
     margin-right: 250px;
     padding-bottom: 20px;
 }
 
-.articles img {
+figure {
+    display: flex;
+    flex-direction: column;
+}
+
+figure figcaption {
+    margin-top: 10px;
+    text-align: center;
+}
+
+figure img {
     border: 4px solid #3882F6;
     border-radius: 8px;
     width: 150px;
@@ -164,11 +183,11 @@ nav {
     color: #1F2937;
 }
 
-.quotes .quote {
+.quotes blockquote {
     font-family: 'lItalic', sans-serif;
 }
 
-.quotes p.author {
+.quotes p {
     text-align: right;
     font-size: 20px;
     font-family: 'Bold', sans-serif;
@@ -178,7 +197,7 @@ nav {
     margin-left: 20%;
     margin-right: 20%;
     display: flex;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
     background-color: #3882F6;
     border-radius: 5px;
     justify-content: center;
@@ -194,13 +213,13 @@ nav {
 
 .action-bt {
     margin-top: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-right: 10px;
 }
 
 .action button {
     border: 2px solid #E5E7EB;
     height: 25px;
+    margin-left: 10px;
 }
 
 .action a:link {
@@ -235,13 +254,12 @@ button {
 }
 
 footer {
-    position: fixed;
     bottom: 0;
-    left: 0;
-    right: 0;
     text-align: center;
     background-color: #1F2937;
     color:  #E5E7EB;
+    height: 50px;
+    padding-top: 1px;
 }
 
 /*News Page content*/
@@ -317,7 +335,7 @@ input {
         font-size: 20px;
     }
 
-    header p {
+    header li {
         font-size: 16px;
         padding-top: 5px;
         padding-left: 5px;
@@ -403,7 +421,7 @@ input {
         font-size: 34px;
     }
     
-    header p {
+    header li {
         font-size: 25px;
         margin-left: 10px;
         padding-top: 15px;
