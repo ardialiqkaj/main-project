@@ -279,6 +279,13 @@ footer {
     margin-bottom: 20px;
 }
 
+input {
+    width: 200px;
+}
+
+#name {
+    width: 115px;
+}
 #register {
     background-color: #E5E7EB;
     color: #3882F6;
@@ -291,4 +298,155 @@ footer {
     background-color: #3882F6;
     color: #E5E7EB;
     transition-duration: 0.2s;
+}
+
+/*Mobile pages*/
+
+@media only screen and (max-width: 600px) {
+    header {
+        position: fixed;
+    }
+    
+    header p {
+        padding-top: 15px;
+        padding-left: 5px;
+    }
+    
+    .hero {
+        padding-top: 100px;
+        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .hero p {
+        width: 100%;
+    }
+
+    .hero img {
+        margin-top: 10px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .articles {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .quotes {
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 25px;
+    }
+
+    .action {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .action p {
+        width: 70%;
+    }
+
+    .action button {
+        width: 120px;
+        height: 60px;
+    }
+
+    /*News Mobile page*/
+
+    .news-articles {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news-articles article {
+        padding-bottom: 20px;
+    }
+
+    .quotes {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    /*About mobile page*/
+
+    #group img {
+        width: 98.2%;
+        align-items: center;
+    }
+
+    #group p {
+        width: 98.2%;
+        align-items: center;
+    }
+}
+
+/*Tablet pages*/
+
+@media only screen and (max-width: 1000px) {
+    header h3 {
+        font-size: 34px;
+    }
+    
+    header p {
+        font-size: 25px;
+        margin-left: 10px;
+        padding-top: 15px;
+    }
+    
+    .hero {
+        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
+        align-items: center;
+    }
+
+    .hero-txt {
+        padding-bottom: 20px;
+    }
+
+    .hero img {
+        width: 90%;
+        height: auto;
+        margin-left: 0;
+        max-width: fit-content;
+    }
+
+    .quotes {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .action {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .action p {
+        font-size: 16px;
+    }
+
+    #group p {
+        font-size: 20px;
+    }
+
+    .register-form {
+        font-size: 20px;
+    }
+
+    input {
+        width: 220px;
+    }
+
+    #register {
+        width: 140px;
+        height: 40px;
+        border-radius: 8px;
+        border: 4px solid #3882F6;
+        font-size: 18px;
+    }
 }
